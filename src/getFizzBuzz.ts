@@ -1,15 +1,16 @@
 export function getFizzBuzz(valor: number) {
-    const divisibleForThree=valor % 3=== 0;
-    const divisibleForFive=valor % 5=== 0;
-
-    if(divisibleForThree && divisibleForFive){
+    if(isDivisibleFor(valor,3) && isDivisibleFor(valor,5)){
         return 'FizzBuzz';
     }
-    if(divisibleForThree){
+    if(isDivisibleFor(valor,3)){
         return 'Fizz';
     }
-    if(divisibleForFive){
+    if(isDivisibleFor(valor,5)){
         return 'Buzz';
     }
   return valor.toString();
+}
+
+function isDivisibleFor(valor:number,divisor:number){
+    return valor % divisor === 0;
 }
