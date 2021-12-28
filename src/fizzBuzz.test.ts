@@ -11,11 +11,15 @@ describe('FizzBuzz', () => {
 
     expect(numeros).toEqual('1\n2\nFizz\n4\n5\nFizz\n7\n8\nFizz\n10\n11\nFizz\n13\n14\nFizz\n16\n17\nFizz\n19\n20\nFizz\n22\n23\nFizz\n25\n26\nFizz\n28\n29\nFizz\n31\n32\nFizz\n34\n35\nFizz\n37\n38\nFizz\n40\n41\nFizz\n43\n44\nFizz\n46\n47\nFizz\n49\n50\nFizz\n52\n53\nFizz\n55\n56\nFizz\n58\n59\nFizz\n61\n62\nFizz\n64\n65\nFizz\n67\n68\nFizz\n70\n71\nFizz\n73\n74\nFizz\n76\n77\nFizz\n79\n80\nFizz\n82\n83\nFizz\n85\n86\nFizz\n88\n89\nFizz\n91\n92\nFizz\n94\n95\nFizz\n97\n98\nFizz\n100');
   });
-  it('numeros divisibles por 3 y 5', () => {
+  it.skip('numeros divisibles por 3 y 5', () => {
     const numeros = fizzBuzz(1,100);
 
     expect(numeros).toEqual('1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\n13\n14\nFizzBuzz\n16\n17\nFizz\n19\nBuzz\nFizz\n22\n23\nFizz\nBuzz\n26\nFizz\n28\n29\nFizzBuzz\n31\n32\nFizz\n34\nBuzz\nFizz\n37\n38\nFizz\nBuzz\n41\nFizz\n43\n44\nFizzBuzz\n46\n47\nFizz\n49\nBuzz\nFizz\n52\n53\nFizz\nBuzz\n56\nFizz\n58\n59\nFizzBuzz\n61\n62\nFizz\n64\nBuzz\nFizz\n67\n68\nFizz\nBuzz\n71\nFizz\n73\n74\nFizzBuzz\n76\n77\nFizz\n79\nBuzz\nFizz\n82\n83\nFizz\nBuzz\n86\nFizz\n88\n89\nFizzBuzz\n91\n92\nFizz\n94\nBuzz\nFizz\n97\n98\nFizz\nBuzz');
   });
-  
+  it('numeros que contienen 3 o 5', () => {
+    const numeros = fizzBuzz(1,100);
+
+    expect(numeros).toEqual('1\n2\nFizz\n4\nBuzz\nFizz\n7\n8\nFizz\nBuzz\n11\nFizz\nFizz\n14\nFizzBuzz\n16\n17\nFizz\n19\nBuzz\nFizz\n22\nFizz\nFizz\nBuzz\n26\nFizz\n28\n29\nFizzBuzz\nFizz\nFizz\nFizz\nFizz\nFizzBuzz\nFizz\nFizz\nFizz\nFizz\nBuzz\n41\nFizz\nFizz\n44\nFizzBuzz\n46\n47\nFizz\n49\nBuzz\nFizz\nBuzz\nFizzBuzz\nFizz\nBuzz\nBuzz\nFizz\nBuzz\nBuzz\nFizzBuzz\n61\n62\nFizz\n64\nBuzz\nFizz\n67\n68\nFizz\nBuzz\n71\nFizz\nFizz\n74\nFizzBuzz\n76\n77\nFizz\n79\nBuzz\nFizz\n82\nFizz\nFizz\nBuzz\n86\nFizz\n88\n89\nFizzBuzz\n91\n92\nFizz\n94\nBuzz\nFizz\n97\n98\nFizz\nBuzz');
+  });
 
 });
