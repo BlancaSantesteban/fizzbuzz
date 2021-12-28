@@ -12,4 +12,10 @@ describe("Get FizzBuzz", () => {
 
     expect(result).toEqual("2");
   });
+
+  it("el valor 4 devuelve 4", () => {
+    const result = getFizzBuzz(4);
+
+    expect(result).toEqual("4");
+  });
 });
