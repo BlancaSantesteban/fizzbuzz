@@ -2,6 +2,9 @@ export function getFizzBuzz(valor: number) {
     const divisibleForThree=valor % 3=== 0;
     const divisibleForFive=valor % 5=== 0;
 
+    if(divisibleForThree && divisibleForFive){
+        return 'FizzBuzz';
+    }
     if(divisibleForThree){
         return 'Fizz';
     }
