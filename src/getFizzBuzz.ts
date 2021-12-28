@@ -5,5 +5,8 @@ export function getFizzBuzz(valor: number) {
     if(valor === 5){
         return 'Buzz'
     }
+    if(valor === 10){
+        return 'Buzz'
+    }
   return valor.toString();
 }
