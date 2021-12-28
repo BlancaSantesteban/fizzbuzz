@@ -1,3 +1,5 @@
+import { getFizzBuzz } from "./getFizzBuzz";
+
 describe("Get FizzBuzz", () => {
   it("el valor 1 devuelve 1", () => {
     const result = getFizzBuzz(1);
@@ -5,7 +7,3 @@ describe("Get FizzBuzz", () => {
     expect(result).toEqual("1");
   });
 });
-
-function getFizzBuzz(numero: number) {
-  return '1';
-}
