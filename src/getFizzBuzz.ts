@@ -1,3 +1,3 @@
-export function getFizzBuzz(numero: number) {
-    return '1';
+export function getFizzBuzz(valor: number) {
+  return "1";
 }
