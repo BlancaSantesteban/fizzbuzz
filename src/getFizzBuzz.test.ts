@@ -49,4 +49,9 @@ describe("Get FizzBuzz", () => {
 
     expect(result).toEqual("Buzz");
   });
+  it("el valor 12 devuelve Fizz", () => {
+    const result = getFizzBuzz(12);
+
+    expect(result).toEqual("Fizz");
+  });
 });
