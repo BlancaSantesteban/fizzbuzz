@@ -76,3 +76,4 @@ describe("Get FizzBuzz", () => {
     expect(result).toEqual("FizzBuzz");
   });
 });
+
